@@ -25,7 +25,7 @@ describe('AppController (e2e)', () => {
   });
 
   afterAll(async () => {
-    // await prisma.user.deleteMany();
+    await prisma.user.deleteMany();
     await app.close();
   });
 

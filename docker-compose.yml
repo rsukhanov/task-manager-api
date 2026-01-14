@@ -8,7 +8,7 @@ services:
     environment:
       MONGODB_REPLICA_SET_MODE: primary
       MONGODB_ADVERTISED_HOSTNAME: localhost
-      MONGODB_ROOT_PASSWORD: Aa123456
+      MONGODB_ROOT_PASSWORD: ${MONGO_PASSWORD}
       MONGODB_REPLICA_SET_KEY: somekey123
     volumes:
       - mongo_data:/bitnami/mongodb
