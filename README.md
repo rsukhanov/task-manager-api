@@ -14,32 +14,20 @@ Backend API for managing tasks and projects. Includes user registration, secure 
 
 ---
 
-## ⚡️ Getting Started
+## ⚡️ Getting Started with Docker
 
-Follow these steps to set up the environment and run the project locally.
+Follow these steps to set up the environment and run the project locally with Docker.
 
 ### 1. Set up .env file with required fields:
-DATABASE_URL
 
 JWT_SECRET
 
-optional: MONGO_PASSWORD
+MONGO_PASSWORD
 
-
-### 2. Set up your MongoDB server or start MongoDB in Docker (needed MONGO_PASSWORD in .env)
-```bash
-npm run docker:up
-```
-
-
-### 3. Install, init database and start
+### 2. Start the Docker:
 
 ```bash
-npm install
-
-npm run db:init
-
-npm run start:dev
+docker compose up --duild
 ```
 
 See your server online on http://localhost:4100
