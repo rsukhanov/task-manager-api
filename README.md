@@ -2,6 +2,9 @@
 
 Backend API for managing tasks and projects. Includes user registration, secure JWT authentication, and MongoDB integration. Built with NestJS and Prisma.
 
+> 🐳 **Docker Note:** Want to run the entire stack (NestJS + MongoDB) in containers without installing Node.js?  
+> Check out the **[full-docker branch](https://github.com/rsukhanov/task-manager-api/tree/docker)** for a fully containerized setup.
+
 ## 🛠 Tech Stack
 
 * **Framework:** [NestJS] (Node.js/TypeScript)
