@@ -10,9 +10,9 @@ export class UsersController {
   @AuthJwtGuard()
   @Get()
   async getUser(
-    @UserData() user
+    @UserData('id') userId: string,
   ) {
-    const userData = await this.usersService.findOne(user.id);
+    const userData = await this.usersService.findOne(userId);
     return this.usersService.extractUserEntity(userData);
   }
 }
