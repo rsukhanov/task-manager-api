@@ -38,6 +38,7 @@ Desktop.ini
 .env.test.local
 .env.production.local
 .env.local
+.env.test
 
 .temp
 .tmp

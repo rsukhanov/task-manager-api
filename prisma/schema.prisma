@@ -32,7 +32,7 @@ model Project {
   updatedAt   DateTime @updatedAt
 
   ownerId     String   @db.ObjectId
-  owner       User     @relation(fields: [ownerId], references: [id])
+  owner       User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
 
   tasks       Task[]
 }
@@ -49,5 +49,5 @@ model Task {
   project   Project?  @relation(fields: [projectId], references: [id], onDelete: Cascade)
 
   ownerId   String   @db.ObjectId
-  owner     User     @relation(fields: [ownerId], references: [id])
+  owner     User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
 }
