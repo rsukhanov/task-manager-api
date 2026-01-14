@@ -24,10 +24,10 @@ JWT_SECRET
 
 MONGO_PASSWORD
 
-### 2. Start the Docker:
+### 2. Start the Docker Container:
 
 ```bash
-docker compose up --duild
+docker compose up --build
 ```
 
 See your server online on http://localhost:4100
