@@ -1,0 +1,17 @@
+services:
+  mongo:
+    image: bitnami/mongodb:latest
+    container_name: task_db
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_ADVERTISED_HOSTNAME: localhost
+      MONGODB_ROOT_PASSWORD: Aa123456
+      MONGODB_REPLICA_SET_KEY: somekey123
+    volumes:
+      - mongo_data:/bitnami/mongodb
+
+volumes:
+  mongo_data:
