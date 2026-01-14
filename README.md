@@ -20,7 +20,9 @@ Follow these steps to set up the environment and run the project locally.
 
 ### 1. Set up .env file with required fields:
 DATABASE_URL
+
 JWT_SECRET
+
 optional: MONGO_PASSWORD
 
 
@@ -58,7 +60,7 @@ You can create .env.test with DATABASE_URL for testing and run:
 npm run test:separate-db
 ```
 
-or run test on the main database:
+or run test with the main database:
 
 ```bash
 npm run test
